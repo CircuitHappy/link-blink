@@ -12,7 +12,7 @@
 #include "driver/gpio.h"
 #include "sdkconfig.h"
 
-#include "vendor/link/include/ableton/Link.hpp"
+#include "ableton/Link.hpp"
 
 /* Can use project configuration menu (idf.py menuconfig) to choose the GPIO to blink,
    or you can edit the following line and set a number here.
@@ -26,6 +26,8 @@ extern "C"
 
 void app_main(void)
 {
+  //instantiate link
+  ableton::Link m_link;
     /* Configure the IOMUX register for pad BLINK_GPIO (some pads are
        muxed to GPIO on reset already, but some default to other
        functions and need to be switched to GPIO. Consult the
