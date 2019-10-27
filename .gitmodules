@@ -1,0 +1,4 @@
+[submodule "main/vendor/link"]
+	path = main/vendor/link
+	url = https://github.com/CircuitHappy/link.git
+	branch = esp32
